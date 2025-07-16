@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# youtube 생활코딩 X NEXT.js 강좌
 
-## Getting Started
+https://www.youtube.com/playlist?list=PLuHgQVnccGMCwxXsQuEoG-JJ7RlwtNdwJ
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 현재 폴더에 앱 설치
+
+```
+npx create-next-app@latest .
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+npx create-next-app@latest .
+√ Would you like to use TypeScript? ... <span style="color:red">No</span> / Yes  
+√ Would you like to use ESLint? ... No / <span style="color:red">Yes</span>  
+√ Would you like to use Tailwind CSS? ... No / <span style="color:red">Yes</span>  
+√ Would you like your code inside a `src/` directory? ... No / <span style="color:red">Yes</span>  
+√ Would you like to use App Router? (recommended) ... No / <span style="color:red">Yes</span>  
+√ Would you like to use Turbopack for `next dev`? ... No / <span style="color:red">Yes</span>  
+√ Would you like to customize the import alias (`@/*` by default)? ... No / <span style="color:red">Yes</span>  
+Creating a new Next.js app in [folder]\nextapp.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Using npm.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Initializing project with template: app-tw 
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Installing dependencies:
+- react
+- react-dom
+- next
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Installing devDependencies:
+- @tailwindcss/postcss
+- tailwindcss
+- eslint
+- eslint-config-next
+- @eslint/eslintrc
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+added 399 packages, and audited 400 packages in 32s
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+166 packages are looking for funding
+  run `npm fund` for details
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+found 0 vulnerabilities
+Initialized a git repository.
+
+Success! Created nextapp at [folder]\nextapp
+
+# DB 파일 생성
+
+```
+db.json
+```
+
+{
+  "topics": [
+    {"id": 1, "title": "html", "body": "html is ..."},
+    {"id": 2, "title": "css", "body": "css is ..."}
+  ]
+}
+
+# DB 서버 실행
+
+```
+npx json-server --port 9999 --watch db.json
+```
