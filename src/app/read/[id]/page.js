@@ -5,6 +5,7 @@ export default async function Read(props) {
   return (
     <>
       <h2>{topic.title}</h2>
+      <p>{topic.body}</p>
       parameters : {params.id}
     </>
   );
