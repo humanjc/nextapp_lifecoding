@@ -1,10 +1,11 @@
 export default async function Read(props) {
-  const resp = await fetch(`http://localhost:9999/topics/${props.params.id}`);
+  const params = await props.params;
+  const resp = await fetch(`http://localhost:9999/topics/${params.id}`);
   const topic = await resp.json();
   return (
     <>
       <h2>{topic.title}</h2>
-      parameters : {props.params.id}
+      parameters : {params.id}
     </>
   );
 }
